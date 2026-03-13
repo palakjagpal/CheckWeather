@@ -9,6 +9,7 @@ function Weather_api(){
     const [city, setcity] = useState("");
     const [error, seterror] = useState(false);
 
+    //async function
     async function getWeather(e){
         e.preventDefault();
         try{
