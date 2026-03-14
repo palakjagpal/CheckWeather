@@ -50,7 +50,11 @@ function Weather_api(){
                 <form onSubmit={getWeather}>
                     <input type="text" placeholder="Enter City"  
                     value={city} 
-                    onChange={(e) => {setcity(e.target.value); seterror("");}}></input>
+                    onChange={(e) => {
+                        setcity(e.target.value); 
+                        seterror("");
+                        setweather(null);
+                    }}></input>
                     <br></br>
                     <button type="submit">SEARCH</button>
                 </form>
