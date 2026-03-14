@@ -29,6 +29,7 @@ function Weather_api(){
             try{
                 const res = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`);
                 setweather(res.data);
+                console.log(city);
                 setcity("");
                 seterror("");
             }catch(err){
