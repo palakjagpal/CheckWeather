@@ -31,7 +31,7 @@ function Weather_api(){
                 <h2>Check Weather...</h2>
                 <br></br>
                 <form onSubmit={getWeather}>
-                    <input type="text" placeholder="Enter City" value={city} onChange={(e) => setcity(e.target.value)}></input>
+                    <input type="text" placeholder="Enter City" pattern="[a-zA-Z\s-]+" title="City name can only contain letters, spaces, and hyphens (e.g., New York or San-Francisco)" value={city} onChange={(e) => setcity(e.target.value)}></input>
                     <br></br>
                     <button type="submit">SEARCH</button>
                 </form>
