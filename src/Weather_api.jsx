@@ -16,7 +16,7 @@ function Weather_api(){
         e.preventDefault();
         if(city.trim() === ""){
             seterror("Please enter a city name");
-            console.log("Please enter a city name");
+            console.log("Please enter a city");
             return;
         }
 
